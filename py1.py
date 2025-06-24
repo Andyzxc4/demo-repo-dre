@@ -1,10 +1,15 @@
-class Greet:
-    def __init__(self, name):
-        self.name = name
+class Name:
+    def __init__(self):
+        self.name = False
 
-    def greet(self):
-        return f"Hello {self.name}!"
+    def setName(self, name):
+        self.name = name
+    
+    def getName(self):
+        return f'Name: {self.name} :)'
     
 
-greet1 = Greet("Dre")
-print(greet1.greet())
+person1 = Name()
+
+person1.setName("Andre")
+print(person1.getName())
